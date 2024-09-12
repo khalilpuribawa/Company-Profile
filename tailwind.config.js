@@ -7,6 +7,9 @@ module.exports = {
       padding: '16px'
     },
     extend: {
+      animation: {
+        'bounce-slow': 'bounce 5s linear infinite',
+      },
       colors:{
         primary:'#2B3E75',
         secondary:'#8071F2',

@@ -1,9 +1,11 @@
+
 //navbar fixed
 window.onscroll =function(){
     const header = document.querySelector('header')
     const fixedNav = header.offsetTop;
+    console.log(fixedNav)
 
-    if (window.pageYOffset > fixedNav){
+    if (window.scrollY > fixedNav){
         header.classList.add('navbar-fixed');
     } else {
         header.classList.remove('navbar-fixed');
@@ -11,7 +13,11 @@ window.onscroll =function(){
 }
 
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    const pageContent = document.querySelector("#animasihome");
+    pageContent.classList.remove("opacity-0", "-translate-y-10");
+    pageContent.classList.add("opacity-100", "translate-y-0");
+});
 
 //hamburger
 const hamburger = document.querySelector('#hamburger');
