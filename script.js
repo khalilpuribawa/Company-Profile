@@ -13,6 +13,22 @@ window.onscroll =function(){
 }
 
 
+function onSubmit() {
+ 
+    let input = document.querySelectorAll("input")
+    for(let item of input) {
+        item.value = " "
+    }
+    let textarea = document.querySelector("textarea")
+    console.log(textarea)
+    textarea.value = ""
+
+    setTimeout(() => {
+        alert("Pesan Berhasil Terkirim!")
+
+    }, 300)
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const pageContent = document.querySelector("#animasihome");
     pageContent.classList.remove("opacity-0", "-translate-y-10");
