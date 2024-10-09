@@ -851,7 +851,7 @@ video {
 }
 
 .animate-bounce-slow {
-  animation: bounce 8s linear infinite;
+  animation: bounce 9s linear infinite;
 }
 
 .flex-col {
